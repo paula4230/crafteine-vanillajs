@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+#header-img{
+    width: 25vmin;
+    margin-top: 3vmin;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 1vmin 2.5vmin;
+    text-align: center;
+    font-size: 1.5vmin;
+}
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+#burger{
+    color: white;
+    height: 5vmin;
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2vmin;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 1vmin;
+    color: black;
+    text-decoration: none;
+}
+#paris{
+    width: 80vmin;
+    padding: 2vmin;
+}
+.post{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+.push{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 90vmin;
+}
+hr{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 1px;
+}
+.frame{
+    width: 30vmin;
+    height: 50vmin;
+    margin: 5vmin;
+}
+.invitation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+    width: 18vmin;
+    font-size: 2vmin;
+}
+.tips{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+#video{
+    width: 60vmin;
+    height: 40vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    place-content: center;
+}
+.form{
+    background-color: rgb(27, 24, 24);
+}
+.connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4vmin;
+    margin: 5vmin;
+    font-weight: bold;
+}
+#info-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vmin;
+}
+input{
+    width:25vmin;
+    height: 2vmin;
+    font-size: 2vmin;
+}
+.submit{
+    width:10vmin;
+    height: 3vmin;
+    font-size: 1vmin;
+    background-color: black;
+    color: white;
+    padding: 1vmin;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.socmed{
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 5vmin;
+    padding: 1vmin;
+    margin: 1vmin;
+}
+#nav-bot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vmin;
+}
+#copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vmin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width:360px){
+    #nav-bar{
+        display: none;
+    }
+    .post{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:2vmin;
+    }
+    .frame{
+        width: 17vmin;
+        height: 30vmin;
+        margin: 0vmin;
+        padding: 0vmin;
+    }
+    .about{
+        margin: 2vmin;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #header-img{
+        width: 25vmin;
+        margin-top: 3vmin;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+    button{
+        display: none;
+    }
+    #video{
+        margin: 0;
+        width: 60vmin;
+        height: 40vmin;
+    }
+    .nav-link{
+        display: none;
+    }
+    #burger{
+        color:black;
+        height: 5vmin;
+    }
+    #title{
+        display: flex;
+        flex-direction: column;
+    }
+}
